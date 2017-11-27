@@ -1,17 +1,14 @@
-#### This is the script I finalised to tidy and summarise the Samsung dataset.
-#### I downloaded it on my computer, I assume it won't be a problem but just in case: 
-######### know where your workind directory is (getwd())
-######### know how to change it to access your files (setwd(""))
-#### For more details, see the CODEBOOK. 
-
-
+This is the script I finalised to tidy and summarise the Samsung dataset.
+I downloaded it on my computer, I assume it won't be a problem but just in case: 
+- know where your workind directory is (getwd())
+- know how to change it to access your files (setwd(""))
+For more details, see the CODEBOOK. 
 
 
 library(dplyr)
-## 1) Upload datasets, all data sets are double, one for the train set, the other for the test 
-
-# test_ and train_subjects: each row identifies subjects for each set.
-# Range: 1-30
+##1) Upload datasets, all data sets are double, one for the train set, the other for the test 
+#test_ and train_subjects: each row identifies subjects for each set.
+#Range: 1-30
 train_subject<-read.table("subject_train.txt")
 test_subject<-read.table("subject_test.txt")
 
